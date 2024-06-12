@@ -292,6 +292,9 @@ body {
 .three {
   background-image: url(../images/main-slider/3.jpg); }
 
+.four {
+    background-image: url(../images/main-slider/4.jpg); }  
+
 .owl-item .slide-animation * {
   animation-duration: 1s;
   animation-fill-mode: both; }
