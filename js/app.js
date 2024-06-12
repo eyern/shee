@@ -380,7 +380,7 @@ $(function () {
             let thisInstance = $(this);
             let itemPerLine = thisInstance.data('item');
             thisInstance.owlCarousel({
-                autoplay: false,
+                autoplay: true,
                 loop: false,
                 dots: false,
                 rewind: true,
@@ -417,7 +417,7 @@ $(function () {
             let thisInstance = $(this);
             let itemPerLine = thisInstance.data('item');
             thisInstance.owlCarousel({
-                autoplay: false,
+                autoplay: true,
                 loop: false,
                 dots: false,
                 rewind: true,
