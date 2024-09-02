@@ -1900,11 +1900,43 @@
         <!-- Footer /- -->
     </div>
     <!-- app /- -->
-    <div class="wrapper">
-        <a class="social" href="https://wa.link/nmfigb"><i class="fa fa-whatsapp"></i></a>
-        <a class="social" href="tel:+254705575229"> <i class="fa fa-phone"></i></a>
-        <a class="close-button" href="#"> <i class="fa fa-close"></i></a>
-    </div>
+    <script>
+        var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?41597';
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = url;
+        var options = {
+        "enabled":true,
+        "chatButtonSetting":{
+            "backgroundColor":"#00e785",
+            "ctaText":"place order here",
+            "borderRadius":"25",
+            "marginLeft": "0",
+            "marginRight": "20",
+            "marginBottom": "20",
+            "ctaIconWATI":false,
+            "position":"right"
+        },
+        "brandSetting":{
+            "brandName":"Shee Gift",
+            "brandSubTitle":"undefined",
+            "brandImg":"https://www.wati.io/wp-content/uploads/2023/04/Wati-logo.svg",
+            "welcomeText":"Attach Screenshots Of Your Order Items",
+            "messageText":"Hello, I'm on Shee Gift Website.%0AI would like to place an order.",
+            "backgroundColor":"#00e785",
+            "ctaText":"place order here",
+            "borderRadius":"25",
+            "autoShow":false,
+            "phoneNumber":"254705575229"
+        }
+        };
+        s.onload = function() {
+            CreateWhatsappChatWidget(options);
+        };
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+    </script>
     <noscript>
         <div class="app-issue">
             <div class="vertical-center">
