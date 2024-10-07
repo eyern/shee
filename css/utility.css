@@ -4534,3 +4534,36 @@
   .u-t-center-sm {
     text-align: center !important; } }
 
+    .search h8
+    {
+    letter-spacing: 3px;
+    display: inline-block;
+    border-bottom: 2px solid #d90429;
+    padding-bottom: 10px;
+    font-family: Quickand;
+    }
+    .search input
+    {
+    width: 60%;
+    padding: 5px 16px;
+    background: transparent;
+    border-radius: 25px;
+    border: 2px solid #d90429;
+    font-size: 14px;
+    text-transform: camelcase;
+    letter-spacing: 3px;
+    outline: none;
+    font-family: Quicksand;
+    }
+     .search input::placeholder
+    {
+    color: #000000;
+    font-weight: 500;
+    }
+    
+    .main-logo {
+      display: inline-block;
+      vertical-align: top; }
+      .main-logo img {
+        display: block; }  
+

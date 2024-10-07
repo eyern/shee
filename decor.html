@@ -200,6 +200,11 @@
             <div class="deal-page-wrapper">
                 <h1 class="deal-heading">Shop Decor</h1>
             </div>
+            <br>
+                <div class="search">
+                    <input type="text" name="" id="find" placeholder="i'm looking for....." onkeyup="search()">
+                  </div>
+                  <br>
             <!-- Page-Bar -->
             <div class="page-bar clearfix">
                 <div class="shop-settings">
@@ -2097,6 +2102,23 @@
     </footer>
     <!-- Footer /- -->
 </div>
+<script>
+    function search() {
+      let filter = document.getElementById('find').value.toUpperCase();
+      let item = document.querySelectorAll('.item');
+      let l = document.getElementsByTagName('h6');
+      for (var i = 0; i <= l.length; i++) {
+        let a = item[i].getElementsByTagName('h6')[0];
+        let value = a.innerHTML || a.innerText || a.textContent;
+        if (value.toUpperCase().indexOf(filter) > -1) {
+          item[i].style.display = "";
+        }
+        else {
+          item[i].style.display = "none";
+        }
+      }
+    }
+  </script>
 <script>
     var url = 'https://wati-integration-prod-service.clare.ai/v2/watiWidget.js?41597';
     var s = document.createElement('script');
